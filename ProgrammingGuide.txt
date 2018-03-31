@@ -1,0 +1,117 @@
+ _____   _  _     _____       _      _      _____       _     _      
+/  __ \_| || |_  |  _  |     (_)    | |    |  __ \     (_)   | |     
+| /  \/_  __  _| | | | |_   _ _  ___| | __ | |  \/_   _ _  __| | ___ 
+| |    _| || |_  | | | | | | | |/ __| |/ / | | __| | | | |/ _` |/ _ \
+| \__/\_  __  _| \ \/' / |_| | | (__|   <  | |_\ \ |_| | | (_| |  __/
+ \____/ |_||_|    \_/\_\\__,_|_|\___|_|\_\  \____/\__,_|_|\__,_|\___|
+
+BASIC DATA TYPES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+integer (int) - holds a whole number value (ex. 25, -5, 183739)
+float - holds a decimal value (ex. 2.5, -32.129)
+character (char) - holds a single letter or number (ex. A, $, 8)
+string - holds a list of characters to form a text block (ex. “Iron loves birds!”)
+boolean (bool) - holds one of two values: true or false
+
+BOOLEAN LOGIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Operator | Name
+--------------------------------------
+ ==      | Equals
+ >       | Greater than
+ <       | Less than
+ >=      | Greater than or equal to
+ <=      | Less than or equal to
+ !=      | Not equal to
+ &&      | And
+ ||      | or
+
+Examples:
+   a == 5 && b >= 6 (true when a is equal to the value 5 AND b is greater than or equal to the value 6)
+   a == b || b > c  (true when a is equal to the value of b OR b is greater than the value of c)
+
+ARITHMETIC OPERATORS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Precedence | Operator              | Name
+-----------------------------------------------------------
+1          | ()                    | Parenthesis
+2          | ++, --                | Increment, decrement
+3          | /, *, %               | Division, multiplication, modulus
+4          | +, -                  | Addition, subtraction
+5          | =, +=, -=, *=, /=, %= | Assignment
+
+IF STATEMENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If statements are a code structure that act based on whether or not a chunk of boolean logic,
+called a conditional, evaluates to either true or false. The optional else statement allows
+you to specify an alternate path of code to execute only if the conditional is false.
+
+if( a == 5 && b >= 6 )
+{
+    \\The conditional is true
+}
+else
+{
+    \\The conditional is false
+}
+
+LOOPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are two main types of loops in code: for loops and while loops. Both continue execution
+based on some form of boolean logic, but have different formats.
+
+For loops are beneficial when you have a fixed number of loop executions you want to perform.
+
+for(int i = 0; i < 6; i++) <-- loop counter initialization; end condition; counter increment
+{
+    \\Loop code
+}
+
+---------------
+
+While loops are beneficial when you want your loop to end only when a certain condition becomes
+true. This means that if you don't choose your loop end condition carefully, you can end up with
+an infinite loop.
+
+int i = 0; <-- loop counter initialization
+while( i < 6 ) <-- end condition
+{
+    \\Loop code
+    i++; <-- counter increment
+}
+
+SWITCHES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A switch statement executes very similarly to a block of if statements. It accepts a value and then
+selects a "case" based on that value.
+
+int a = 3;
+switch(a)
+{
+    case 1: \\Execute if the value of a is 1!
+    case 2: \\Execute if the value of a is 2!
+    case 3: \\ Execute if the value of a is 3!
+    default: \\Execute if the value of a didn't match any of our cases.
+}
+
+This same switch can be represented with if-else statements:
+
+int a = 3;
+if( a == 1 )
+{
+    \\Execute if the value of a is 1!
+}
+else if( a == 2 )
+{
+    \\Execute if the value of a is 2!
+}
+else if( a == 3 )
+{
+    \\Execute if the value of a is 3!
+}
+else
+{
+    \\Execute if the value of a didn't match any of our ifs
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
